@@ -245,9 +245,90 @@ footer {
 }
 
 .category-box {
-    border: 1px solid black; /* placeholder */
+    border-bottom: 1px solid black; /* placeholder */
     width: 33%;
-    height: 400px; /* placeholder */
+    height: 700px; /* placeholder */
+    position: relative;
+    padding: 0 10px;
+}
+
+.category-box * {
+    position: relative;
+}
+
+.category-box-link {
+    width: 100%;
+    height: 185px;
+}
+
+#category-hard-fork {
+    height: 250px;
+    width: 95%;
+    background-image: url("assets/Wallstreetbets-hed-368x276.jpg");
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+.category-box-heading h5 {
+    color: white;
+}
+
+.category-box-heading a {
+    color: white;
+    text-decoration: none;
+}
+
+.category-box-heading p a,
+.category-box-heading p  {
+    color: gray;
+}
+
+.category-latest-container {
+    display: flex;
+}
+
+.category-latest-image-link {
+    height: 100%;
+}
+
+#category-latest-image1 {
+    width: 150px;
+    height: 100px;
+    background-image: url("assets/sq-online-store-phone-e1614664052360.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.category-latest {
+    background-color: rgb(255, 171, 123);
+    color: rgb(196, 78, 0);
+}
+
+.category-latest a {
+    color: rgb(196, 78, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.category-latest-list-container {
+    padding-left: 17px;
+}
+
+.category-latest-list-container ul hr {
+    width: 20em;
+    position: relative;
+    right: 1em;
+    border: 0px;
+    border-top: 1px solid rgb(207, 207, 207);
+}
+
+.category-latest-list-container li {
+    list-style: square;
+}
+
+.category-latest-list-container a {
+    text-decoration: none;
+    color: black;
 }
 
 #deals-container {
