@@ -5,7 +5,6 @@
 }
 
 body, html {
-    background-color: rgb(245, 245, 245);
     font-family: "Maven Pro", Arial, Helvetica, sans-serif;
 }
 
@@ -261,12 +260,55 @@ footer {
     height: 185px;
 }
 
-#category-hard-fork {
+#category-one,
+#category-two,
+#category-three,
+#category-four,
+#category-five,
+#category-six,
+#category-seven,
+#category-eight,
+#category-nine {
     height: 250px;
     width: 95%;
-    background-image: url("assets/Wallstreetbets-hed-368x276.jpg");
     background-size: 100% 100%;
     position: absolute;
+}
+
+#category-one {
+    background-image: url("assets/Wallstreetbets-hed-368x276.jpg");
+}
+
+#category-two {
+    background-image: url("assets/Wallstreetbets-hed-368x276.jpg");
+}
+
+#category-three {
+    background-image: url("assets/Wallstreetbets-hed-368x276.jpg");
+}
+
+#category-four {
+    background-image: url("assets/Wallstreetbets-hed-368x276.jpg");
+}
+
+#category-five {
+    background-image: url("assets/Wallstreetbets-hed-368x276.jpg");
+}
+
+#category-six {
+    background-image: url("assets/Wallstreetbets-hed-368x276.jpg");
+}
+
+#category-seven {
+    background-image: url("assets/Wallstreetbets-hed-368x276.jpg");
+}
+
+#category-eight {
+    background-image: url("assets/Wallstreetbets-hed-368x276.jpg");
+}
+
+#category-nine {
+    background-image: url("assets/Wallstreetbets-hed-368x276.jpg");
 }
 
 .category-box-heading h5 {
@@ -291,12 +333,55 @@ footer {
     height: 100%;
 }
 
-#category-latest-image1 {
+#category-latest-image1,
+#category-latest-image2,
+#category-latest-image3,
+#category-latest-image4,
+#category-latest-image5,
+#category-latest-image6,
+#category-latest-image7,
+#category-latest-image8,
+#category-latest-image9 {
     width: 150px;
     height: 100px;
-    background-image: url("assets/sq-online-store-phone-e1614664052360.jpg");
     background-size: cover;
     background-position: center;
+}
+
+#category-latest-image1 {
+    background-image: url("assets/sq-online-store-phone-e1614664052360.jpg");
+}
+
+#category-latest-image2 {
+    background-image: url("assets/sq-online-store-phone-e1614664052360.jpg");
+}
+
+#category-latest-image3 {
+    background-image: url("assets/sq-online-store-phone-e1614664052360.jpg");
+}
+
+#category-latest-image4 {
+    background-image: url("assets/sq-online-store-phone-e1614664052360.jpg");
+}
+
+#category-latest-image5 {
+    background-image: url("assets/sq-online-store-phone-e1614664052360.jpg");
+}
+
+#category-latest-image6 {
+    background-image: url("assets/sq-online-store-phone-e1614664052360.jpg");
+}
+
+#category-latest-image7 {
+    background-image: url("assets/sq-online-store-phone-e1614664052360.jpg");
+}
+
+#category-latest-image8 {
+    background-image: url("assets/sq-online-store-phone-e1614664052360.jpg");
+}
+
+#category-latest-image9 {
+    background-image: url("assets/sq-online-store-phone-e1614664052360.jpg");
 }
 
 .category-latest {
@@ -339,12 +424,19 @@ footer {
 }
 
 .deals-box {
-    border: 1px solid black; /* placeholder */
+    border-bottom: 1px solid black; /* placeholder */
     width: 25%;
-    height: 250px; /* placeholder */
+    padding: 0 10px;
 }
 
+.deals-box img {
+    width: 100%;
+}
 
+#deals-heading {
+    display: flex;
+    justify-content: space-between;
+}
 
 @media (max-width: 1100px) {
     #main-boxes {
@@ -451,7 +543,14 @@ footer {
 
     .deals-box {
         width: 100%;
-        height: 100px; /* placeholder */
+        height: 100px;
+        padding: 10px 0;
+        display: flex;
+    }
+
+    .deals-box img {
+        width: 100px;
+        height: 100%;
     }
 
     #nav-boost {
