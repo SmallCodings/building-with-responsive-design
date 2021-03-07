@@ -6,6 +6,7 @@
 
 body, html {
     background-color: rgb(245, 245, 245);
+    font-family: "Maven Pro", Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -27,27 +28,42 @@ header {
 
 #nav-logo {
     background-color: black;
-    height: 50px; /* placeholder */
-    width: 100px; /* placeholder */
+    height: 50px;
+    width: 110px;
+}
+
+#nav-logo img {
+    width: 70px;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
 }
 
 #nav-boost {
-    background-color: yellow;
+    background-color: #fff45b;
     width: 100%;
-    height: 25px; /* placeholder */
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#nav-boost a {
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
 }
 
 main {
-    margin-top: 78px;
+    margin-top: 85px;
 }
 
 .container {
     width: 95%;
     max-width: 1150px;
     height: 100%;
-    background-color: red; /* placeholder */
-    margin: 100px auto;
-    border: 1px solid black; /* placeholder */
+    margin: 50px auto;
 }
 
 #nav-inner-container {
@@ -72,7 +88,7 @@ footer {
 }
 
 #main-boxes-main {
-    background-color: yellow; /* placeholder */
+    background-color: black;
     height: 100%;
     width: 60%;
     background-image: url("assets/asteroid\ main.jpg");
@@ -81,8 +97,16 @@ footer {
     background-position: center;
 }
 
+#main-boxes-main a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
 #main-boxes-secondary-container {
-    background-color: blue; /* placeholder */
     height: 100%;
     width: 39%;
     display: flex;
@@ -90,15 +114,44 @@ footer {
     justify-content: space-between;
 }
 
+#main-boxes-secondary-container a {
+    text-decoration: none;
+    color: white;
+}
+
 .main-boxes-secondary {
     background-color: cyan; /* placeholder */
-    height: 49%;
+    height: 50%;
     width: 100%;
+}
+
+.margin-bottom {
+    margin-bottom: 5px;
+}
+
+.main-boxes-secondary-first {
+    background-image: url("assets/boost.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.main-boxes-secondary-second {
+    background-image: url("assets/1-copy-7-796x417.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
 }
 
 .red-gradient {
     background-image: linear-gradient(170deg, rgba(255, 0, 0, 0.753), rgba(255, 0, 0, 0.486), rgba(255, 0, 0, 0.089), rgba(255, 0, 0, 0));
-    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.black-gradient {
+    background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0));
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -111,10 +164,19 @@ footer {
     justify-content: center;
 }
 
+#news-heading {
+    padding-left: 10px;
+}
+
 .news-box {
-    border: 1px solid black; /* placeholder */
     width: 25%;
-    height: 250px; /* placeholder */
+    height: 250px;
+    padding: 0 10px;
+}
+
+.news-box img {
+    width: 100%;
+    height: 55%;
 }
 
 #index-funding-container {
@@ -161,6 +223,7 @@ footer {
     height: 250px; /* placeholder */
 }
 
+
 @media (max-width: 1100px) {
     #main-boxes {
         height: 325px;
@@ -196,6 +259,12 @@ footer {
     .deals-box {
         width: 33%;
     }
+
+    #nav-boost a {
+        padding-left: 0;
+        margin: 0 auto;
+        width: 70%;
+    }
 }
 
 @media (max-width: 700px) {
@@ -219,9 +288,20 @@ footer {
         width: 100%;
     }
 
+    #news-heading {
+        padding-left: 0;
+    }
+
     .news-box {
         width: 100%;
-        height: 100px; /* placeholder */
+        height: 100px;
+        display: flex;
+        padding: 10px 0;
+    }
+
+    .news-box img {
+        width: 120px;
+        height: 100%;
     }
 
     #index-funding-container {
@@ -243,4 +323,14 @@ footer {
         width: 100%;
         height: 100px; /* placeholder */
     }
+
+    #nav-boost {
+        padding: 40px 0;
+    }
+
+    #nav-boost a {
+        width: 90%;
+        text-align: center;
+    }
+    
 }
