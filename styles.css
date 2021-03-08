@@ -212,10 +212,10 @@ footer {
     background-size: 100% 100%;
 }
 
-.second-boxes-description h3, p {
+.second-boxes-description h3,
+.second-boxes-description p {
     padding: 0 15px 15px;
 }
-
 
 .second-boxes-description h3 {
     font-size: 26px;
@@ -259,6 +259,30 @@ footer {
     padding: 0 10px;
 }
 
+.news-box-description {
+    padding-top: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-box-description a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.news-box-description p a,
+.news-box-description p time {
+    color: rgb(173, 173, 173);
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.news-box-description p {
+    padding-top: 8px;
+}
+
 .news-box img {
     width: 100%;
     height: 55%;
@@ -271,11 +295,9 @@ footer {
 }
 
 .index-funding-box {
-    border-bottom: 1px solid black; /* placeholder */
     width: 25%;
     position: relative;
     padding: 0 10px;
-    height: 250px;
 }
 
 .index-funding-box img {
@@ -301,11 +323,66 @@ footer {
 }
 
 .index-funding-cost {
-    background-color: rgb(255, 194, 170);
+    background-color: rgb(255, 233, 224);
     height: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+#index-heading-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#index-nav-list {
+    margin-top: 9px;
+}
+
+#index-nav-list a {
+    color: rgb(247, 94, 34);
+}
+
+#index-nav-list a:hover {
+    color: black;
+}
+
+#index-nav-list li {
+    float: left;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+#index-nav-list li a {
+    text-decoration: none;
+}
+
+.index-funding-description {
+    background-color: rgb(255, 252, 250);
+    padding: 15px 15px 20px;
+    font-size: 13px;
+    color: rgb(83, 83, 83);
+}
+
+.index-funding-description hr {
+    margin: 15px 0;
+    border: 0px solid black;
+    border-top: 1px solid rgba(255, 142, 77, 0.5);
+}
+
+.index-funding-description {
+    line-height: 25px;
+}
+
+.index-funding-footer {
+    line-height: 18px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.index-funding-footer span{
+    color: rgb(155, 155, 155);
 }
 
 .index-funding-pricetag {
@@ -535,6 +612,13 @@ footer {
     position: absolute;
 }
 
+.article-heading {
+    color: rgb(238, 68, 16);
+    font-weight: bolder;
+    font-size: 26px;
+    padding: 0 0 25px 10px;
+}
+
 @media (max-width: 1100px) {
     #main-boxes {
         height: 325px;
@@ -602,6 +686,22 @@ footer {
         margin: 0 auto;
         width: 70%;
     }
+
+    #index-heading-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #index-nav-list {
+        margin-top: -10px;
+        margin-bottom: 40px;
+    }
+
+    #index-nav-list li a {
+        font-weight: normal;
+    }
+
 }
 
 @media (max-width: 700px) {
@@ -666,6 +766,7 @@ footer {
         width: 100%;
         height: 200px;
         padding: 10px 0;
+        margin-bottom: 50px;
     }
 
     .index-funding-box img {
@@ -716,6 +817,21 @@ footer {
         left: 0;
         padding: 18px;
         border-left: 1px solid rgb(202, 202, 202);
+    }
+
+    .news-box-description {
+        padding-left: 15px;
+        padding-top: 0;
+    }
+
+    #index-nav-list li {
+        float: none;
+        padding: 5px 0;
+        font-size: 15px;
+    }
+
+    #index-nav-list {
+        margin-bottom: 10px;
     }
 
 }
